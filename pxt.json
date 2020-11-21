@@ -1,0 +1,23 @@
+{
+    "name": "educationcontent",
+    "version": "8.0.2",
+    "dependencies": {
+        "core": "*",
+        "builder": "*"
+    },
+    "files": [
+        "coding-fun/lesson-1/agent-move.md",
+        "coding-fun/lesson-1/agent-up.md",
+        "coding-fun/lesson-1/agent.md",
+        "coding-fun/lesson-1/last-room.md",
+        "coding-fun/lesson-1/welcome.md"
+    ],
+    "targetVersions": {
+        "target": "1.5.44",
+        "targetId": "minecraft"
+    },
+    "supportedTargets": [
+        "minecraft"
+    ],
+    "preferredEditor": "tsprj"
+}
