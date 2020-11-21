@@ -6,9 +6,9 @@
 ### @explicitHints 1
 
 
-# Program the Agent to move up to the gold plate!
+# Запрограммируй Агента двигаться к золотому блоку!
 
-## Step 1
+## Шаг 1
 Program the Agent to reach the gold plate. You need to stay on your gold plate, while the Agent needs to stay on the other one. When done, press the **Play** buton to compile the code. Go to Minecraft to run your code.
 
 
