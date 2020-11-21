@@ -10,7 +10,8 @@
         "coding-fun/lesson-1/agent-up.md",
         "coding-fun/lesson-1/agent.md",
         "coding-fun/lesson-1/last-room.md",
-        "coding-fun/lesson-1/welcome.md"
+        "coding-fun/lesson-1/welcome.md",
+        "no_coding.md"
     ],
     "targetVersions": {
         "target": "1.5.44",
