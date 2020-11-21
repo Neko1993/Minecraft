@@ -2,8 +2,8 @@
 ### @hideIteration true 
 ### @explicitHints 1
 
-## Step 1
-Welcome your Agent!
+## Шаг 1
+Ты создал Агента!
 
 
 ```ghost
