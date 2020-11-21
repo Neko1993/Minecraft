@@ -2,7 +2,7 @@
 ### @flyoutOnly 1
 
 
-# No code is required for this activity. 
+# На данном шаге писать программу не требуется 
 
 ```blocks
 loops.onStart()
