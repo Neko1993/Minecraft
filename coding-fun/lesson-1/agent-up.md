@@ -13,10 +13,9 @@ Use ``||player:on chat||`` and  ``||agent:agent move||`` commands to program the
 
 
 
-```ghost
+```python
 player.onChat("up", function () {
     agent.move(FORWARD, 1)
     agent.turn(LEFT_TURN)
 })
-
-``
+```
