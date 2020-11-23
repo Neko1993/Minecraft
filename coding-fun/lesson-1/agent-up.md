@@ -2,18 +2,23 @@
 ### @codeStop players set @s makecode 1
 
 ### @hideIteration true 
-### @flyoutOnly 1
 ### @explicitHints 1
 
-
+```python
+```
 # Запрограммируй Агента двигаться к золотому блоку!
 
 ## Шаг 1
-Use ``||player:on chat||`` and  ``||agent:agent move||`` commands to program the Agent to move towards the gold plate. You can program the Agent to move **up**. When done, press the **Play** button to compile the code. Go to Minecraft to run your code in game.
+Напишите обработчик ``||player: player.on_chat()||``, который будет реагировать на сообщение **start**. Для управления агентом используйте ``||agent: agent.move()||`` или ``||agent: agent.turn()||``.
+#### ~ tutorialhint 
+Возможные варианты направлений для ``||agent: agent.move()||``: **FORVARD** - вперед, **BACK** - назад, **LEFT** - налево, **RIGHT** - направо, **UP** - вверх, **DOWN** - вниз.
 
+Возможные варианты направлений для ``||agent: agent.turn()||``: **TurnDirection.LEFT** - налево, **TurnDirection.RIGHT** - направо.
+
+```ghost
 ```python
-player.onChat("up", function () {
+def on_chat():
     agent.move(FORWARD, 1)
     agent.turn(LEFT_TURN)
-})
+player.on_chat("up", on_chat)
 ```

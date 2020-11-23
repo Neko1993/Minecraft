@@ -1,11 +1,9 @@
-### @flyoutOnly 1
 ### @hideIteration true 
 ### @explicitHints 1
 
+```python
+```
 ## Шаг 1
-Ты создал Агента!
-
-
+Поздравляю! Ты создал Агента!
 ```ghost
-loops.onStart()
 ```

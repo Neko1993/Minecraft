@@ -2,19 +2,21 @@
 ### @codeStop players set @s makecode 1
 
 ### @hideIteration true 
-### @flyoutOnly 1
 ### @explicitHints 1
 
-
+```python
+```
 # Запрограммируй Агента двигаться к золотому блоку!
 
 ## Шаг 1
-Program the Agent to reach the gold plate. You need to stay on your gold plate, while the Agent needs to stay on the other one. When done, press the **Play** buton to compile the code. Go to Minecraft to run your code.
+Запрограммируй агента таким образом, что бы он достиг золотого блока. При этом ты должен оказаться на другом золотом блоке не позже чем через 10 секунд.
 
 
 ```ghost
-player.onChat("last", function () {
+```python
+def on_chat():
     agent.move(FORWARD, 1)
     agent.turn(LEFT_TURN)
-})
-``` 
+player.on_chat("last", on_chat)
+```
+```

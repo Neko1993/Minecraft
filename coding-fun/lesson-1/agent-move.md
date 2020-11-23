@@ -5,6 +5,8 @@
 ### @hideIteration true 
 ### @explicitHints 1
 
+```python
+```
 # Запрограммируй Агента двигаться к золотому блоку!
 
 ## Шаг 1
@@ -13,8 +15,8 @@
 Возможные варианты направлений для ``||agent: agent.move()||``: **FORVARD** - вперед, **BACK** - назад, **LEFT** - налево, **RIGHT** - направо.
 
 Возможные варианты направлений для ``||agent: agent.turn()||``: **TurnDirection.LEFT** - налево, **TurnDirection.RIGHT** - направо.
-```python
 ```ghost
+```python
 def on_chat():
     agent.move(FORWARD, 1)
     agent.turn(LEFT_TURN)
