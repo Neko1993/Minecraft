@@ -1,25 +1,23 @@
 ### @codeStart players set @s makecode 0
 ### @codeStop players set @s makecode 1
 
-### @hideIteration true 
-### @flyoutOnly 1
-### @explicitHints 1
 
+### @hideIteration true 
+### @explicitHints 1
 
 # Запрограммируй Агента двигаться к золотому блоку!
 
 ## Шаг 1
-Select an ``||player:on chat||`` command and rename it from **run** to **1**. Select an ``||agent: agent move forward||`` block and drag it inside the ``||player:on chat||`` command. Change the **number** of steps the Agent moves to **3**, so that Agent can reach the gold plate. When done, press the **Play** button to compile the code, then go to Minecraft, press **t** and type **1**.
-
+Напишите обработчик ``||player: player.on_chat()||``, который будет реагировать на сообщение **start**. Для управления агентом используйте ``||agent: agent.move()||`` или ``||agent: agent.turn()||``.
 #### ~ tutorialhint 
-You can change the number of steps your Agent will move by changing the number inside the ``||agent: agent move||`` block. You also can use an ``||agent: agent turn||`` block to turn the Agent to the left or right.
+Возможные варианты направлений для ``||agent: agent.move()||``: **FORVARD** - вперед, **BACK** - назад, **LEFT** - налево, **RIGHT** - направо.
 
-
-
+Возможные варианты направлений для ``||agent: agent.turn()||``: **TurnDirection.LEFT** - налево, **TurnDirection.RIGHT** - направо.
+```python
 ```ghost
-player.onChat("1", function () {
+def on_chat():
     agent.move(FORWARD, 1)
     agent.turn(LEFT_TURN)
-})
-
+player.on_chat("start", on_chat)
+```
 ```
