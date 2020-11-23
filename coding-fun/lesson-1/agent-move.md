@@ -15,6 +15,7 @@
 Возможные варианты направлений для ``||agent: agent.move()||``: **FORVARD** - вперед, **BACK** - назад, **LEFT** - налево, **RIGHT** - направо.
 
 Возможные варианты направлений для ``||agent: agent.turn()||``: **TurnDirection.LEFT** - налево, **TurnDirection.RIGHT** - направо.
+
 ```ghost
 ```python
 def on_chat():
