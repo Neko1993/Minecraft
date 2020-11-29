@@ -12,7 +12,7 @@
 ## Шаг 1
 Напишите обработчик ``||player: player.on_chat()||``, который будет реагировать на сообщение **start**. Для управления агентом используйте ``||agent: agent.move()||`` или ``||agent: agent.turn()||``.
 #### ~ tutorialhint 
-Возможные варианты направлений для ``||agent: agent.move()||``: **FORVARD** - вперед, **BACK** - назад, **LEFT** - налево, **RIGHT** - направо.
+Возможные варианты направлений для ``||agent: agent.move()||``: **FORWARD** - вперед, **BACK** - назад, **LEFT** - налево, **RIGHT** - направо.
 
 Возможные варианты направлений для ``||agent: agent.turn()||``: **TurnDirection.LEFT** - налево, **TurnDirection.RIGHT** - направо.
 
