@@ -18,16 +18,11 @@
 
 Возможные варианты направлений для ``||agent: agent.destroy()||``: **FORWARD** - вперед, **BACK** - назад, **LEFT** - налево, **RIGHT** - направо, **UP** - вверх, **DOWN** - вниз.
 
-```template
-def on_chat():
-    while(agent.detect(AgentDetection.BLOCK, FORWARD)):
-        pass
-player.on_chat("cub", on_chat)
-```
 
 ```ghost
+```python
 def on_chat():
-    while(agent.detect(AgentDetection.BLOCK, FORWARD)):
+    while agent.detect(AgentDetection.BLOCK, FORWARD):
         agent.destroy(FORWARD)
         agent.move(FORWARD, 1)
         agent.destroy(UP)
