@@ -62,7 +62,7 @@ def on_chat():
         if agent.inspect(AgentInspection.Block, DOWN) == IRON_ORE:
             agent.turn(TurnDirection.LEFT)
         agent.move(FORWARD, 1)
-        player.say("Found Ore Deposit!")
+    player.say("Found Ore Deposit!")
 player.on_chat("3", on_chat)
 ```
 
