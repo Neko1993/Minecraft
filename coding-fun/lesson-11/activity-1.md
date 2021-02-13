@@ -12,8 +12,8 @@
 ## Step 1
 Выберите верный вариант кода что бы выполнить задание. Будьте внимательны, у Вас только одна попытка.
 
+
 ```python
-```template
 def on_chat():
     for index in range(28):
         if agent.detect(AgentDetection.BLOCK, FORWARD) or agent.detect(AgentDetection.BLOCK, LEFT) or agent.detect(AgentDetection.BLOCK, RIGHT):
@@ -65,7 +65,6 @@ def on_chat():
         player.say("Found Ore Deposit!")
 player.on_chat("3", on_chat)
 ```
-
 
 ```ghost
 def on_chat():
