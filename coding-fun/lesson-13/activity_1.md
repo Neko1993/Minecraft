@@ -20,8 +20,9 @@
 mobs.apply_effect(FIRE_RESISTANCE, mobs.target(NEAREST_PLAYER))
 ```
 
+
 ```ghost
-```python
+
 def on_travelled_walk():
     mobs.apply_effect(FIRE_RESISTANCE, mobs.target(NEAREST_PLAYER), 10)
 player.on_travelled(WALK, on_travelled_walk)
