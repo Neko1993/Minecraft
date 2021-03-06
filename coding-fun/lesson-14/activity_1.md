@@ -7,16 +7,23 @@
 
 # Pass the dinosaur!
 
-## Step 1
-You need to ``||player:sneak past||`` the dinosaur by making yourself ``||mobs:invisible||``. Can you make this happen? 
+```python
+```
 
+## Step 1
+Вам необходимо прокрасться(Shift+W) мимо динозавра. Наложите на себя эффект ``||mobs:mobs.apply_effect()||`` невидимости, когда крадетесь, что бы динозавр Вас не заметил. 
 
 ### ~ tutorialHint
-Try pressing shift and W to sneak in Minecraft. 
+Доступные виды движения:
+**WALK** - ходить, **SWIM_WATER** - плыть в воде, **FALL** - падать, **CLIMB** - взбираться, **SWIM_LAVA** - плыть в лаве, **FLY** - лететь, **RIDING** - ехать, **SNEAK** - красться, **SPRINT** - бежать
+
+Доступные ваиранты эффектов:
+**SPEED** - скорость движения, **SLOWNESS** - замедление, **HASTE** - ускорение работ, **STRENGTH** - сила, **JUMP_BOOST** - усиление прыжка, **RESISTANCE** - сопротивление, **FIRE_RESISTANCE** - сопротивление к огню, **WATER_BREATHING** - подводное дыхание, **INVISIBILITY** - невидимость, **NIGHT_VISION** - ночное зрение, **LEVITATION** - левитация 
 
 
 ```ghost
-player.onTravelled(SNEAK, function () {
-    mobs.applyEffect(INVISIBILITY, mobs.target(NEAREST_PLAYER), 3, 1)
-})
+```python
+def on_travelled_walk():
+    mobs.apply_effect(INVISIBILITY, mobs.target(NEAREST_PLAYER))
+player.on_travelled(SNEAK, on_travelled_walk)
 ```
