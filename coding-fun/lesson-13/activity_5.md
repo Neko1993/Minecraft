@@ -16,7 +16,7 @@
 1. Создайте 3 глобальные логические переменные: **walk**, **jump** и **swim**. Инициализируйте их как **False**.
 2. Создайте 3 обработчика событий: **WALK**, **FALL**, **SWIM_WATER**
 3. При срабатывании каждого события измените значение соответсвующей переменной на **True**.
-4. В бесконечном цикле проверяйте: если **walk** и **jump** и **swim** измените погоду на дождливую ``||gameplay: gameplay.set_weather(RAIN)||``
+4. При сообщении в чат "Rain, rain come again" выполняете проверку: если **walk** и **jump** и **swim** измените погоду на дождливую ``||gameplay: gameplay.set_weather(RAIN)||``
 
 
 ### ~ tutorialHint
@@ -44,8 +44,8 @@ def on_travelled_swim():
     swim = True
 player.on_travelled(SWIM_WATER, on_travelled_swim)
 
-
-while True:
+def on_chat():
     if walk and jump and swim:
         gameplay.set_weather(RAIN)
+player.on_chat('rain', on_chat)
 ```
