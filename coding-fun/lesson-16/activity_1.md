@@ -26,6 +26,7 @@ player.on_chat("forward", on_chat)
 Не забудьте добавить команду **mine**, при которой Агент разрушит блок под собой и соберет полученую руду.
 
 ```ghost
+```python
 def on_chat(steps):
     agent.move(FORWARD, steps)
 player.on_chat("forward", on_chat)

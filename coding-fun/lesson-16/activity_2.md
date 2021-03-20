@@ -20,6 +20,7 @@
 ```
 
 ```ghost
+```python
 def on_chat(size, height):
     for i in range(height):
         for j in range(4):

@@ -17,6 +17,7 @@
 
 
 ```ghost
+```python
 def on_chat(width, length, height):
     for i in range(height):
         for j in range(2):
