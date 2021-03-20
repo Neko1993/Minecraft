@@ -11,26 +11,25 @@
 ```
 
 ## Step 1
-Use **stone** as your building material, create **3** ``||variable: variables||`` and name them **width**, **length** and **height**; set the ``||variable: variables||`` to the correct parameters. Don't forget to add your variables to the ``||player: on chat||`` command.
+Создайте обработчик события, запускающийся при сообщении **build** и имеющий 3 параметра **width**, **length**, **height**. Постройте стены дома из **STONE** используя 3 вложенных цикла ``||loops: for i in range()||`` и введенные параметры. 
+
+При построении каждого уровня, в цикле считайте что у вас 2 повторения, а не 4. Сами же стены возводите по 2 за раз.
+
 
 ```ghost
-player.onChat("town_hall", function (length, width, height) {
-    for (let index = 0; index < height; index++) {
-        for (let index = 0; index < 2; index++) {
-            for (let index = 0; index < length; index++) {
-                agent.setItem(STONE, 1, 1)
+def on_chat(width, length, height):
+    for i in range(height):
+        for j in range(2):
+            for k in range(width):
+                agent.set_item(STONE, 1, 1)
                 agent.place(DOWN)
                 agent.move(FORWARD, 1)
-            }
-            agent.turn(RIGHT_TURN)
-            for (let index = 0; index < width; index++) {
-                agent.setItem(STONE, 1, 1)
+            agent.turn(TurnDirection.RIGHT)
+            for k in range(length):
+                agent.set_item(STONE, 1, 1)
                 agent.place(DOWN)
                 agent.move(FORWARD, 1)
-            }
-            agent.turn(RIGHT_TURN)
-        }
+            agent.turn(TurnDirection.RIGHT)
         agent.move(UP, 1)
-    }
-})
+player.on_chat("1", on_chat)
 ```
