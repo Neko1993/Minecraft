@@ -7,28 +7,26 @@
 
 # Build a Town Hall!
 
-## Step 1
-We created a function **plantSeed** for you. It is simply the code that you used for the previous activity. Now drag ``||player: on chat||`` command into the workspace. Add a ``||loops: repeat||`` loop and ``||function:call plantSeed||`` function. Count how many times the Agent needs to repeat **plantSeed** function. 
-
-### ~ tutorialHint
-Functions live in the **Advanced** section. It is also a good practice to leave notes about the code that's written, like the one that we left for you about functions. 
-
-```template
-/**
- * A function allows you to easily reuse code.
- */
-function plantSeed () {
-    agent.till(FORWARD)
-    agent.move(FORWARD, 1)
-    agent.place(DOWN)
-}
+```python
 ```
 
+## Step 1
+Создай собственную функцию **plantSeed** и размести в нее тот же код, что и напредыдущем задании. Она поможет тебе упростить код и сделать его более читаемым. Добавь обработчик события ``||player: player.on_chat()||``. Внутри функции используй цикл  ``||loops: for||`` и вызов твоей функции **plantSeed** чтобы посадить грядку.
+
+### ~ tutorialHint
+Для вызова функции используйте имя функции и круглые скобки.
+
+
+
 ```ghost
-player.onChat("plantSection", function () {
-    for (let index = 0; index < 11; index++) {
+```python
+def plantSeed():
+    agent.till(FORWARD)
+    agent.place(FORWARD)
+
+def on_chat():
+    for i in range(11):
         plantSeed()
-    }
-    agent.move(FORWARD, 1)
-})
+        agent.move(FORWARD, 1)
+player.on_chat("1", on_chat)
 ```

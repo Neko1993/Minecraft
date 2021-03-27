@@ -6,13 +6,17 @@
 
 
 # Plant a Seed!
+```python
+```
 
 ## Step 1
-First, right-click the Agent to open its inventory and give it the seeds. Then create ``||player: on chat||`` command and add ``||agent: till forward||`` and ``||agent: place||``. 
+Во-первых, передай агенту семена(правой кнопкой по агенту, перемести из своего инвентаря в его).
+Затем, создай обработчик события ``||player: player.on_chat()||`` и используй команды обработать ``||agent: agent.till()||`` и ``||agent: agent.place()||`` для посадки семян.
 
 ```ghost
-player.onChat("plantSeed", function () {
+```python
+def on_chat():
     agent.till(FORWARD)
     agent.place(FORWARD)
-})
+player.on_chat("1", on_chat)
 ```
