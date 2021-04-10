@@ -2,11 +2,12 @@
 ### @flyoutOnly 1
 ### @explicitHints 1
 
+```python
+```
 
 ## No code is required for this activity. 
-It looks like you haven't started a new activity or there's no coding needed right now. Go find someone who needs your help!
+Похоже, что в данный момент вы не выполняете никаких заданий или вам не нужно писать код. Найдите кого нибудь, кто нуждается в вашей помощи!
 
 ```template
-player.onChat("run", function () {
-})
+```python
 ```
