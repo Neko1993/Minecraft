@@ -1,0 +1,29 @@
+{
+    "name": "minecraft-hoc2020-md",
+    "version": "0.7.0",
+    "dependencies": {
+        "core": "*",
+        "builder": "*"
+    },
+    "files": [
+        "README.md",
+        "ball.md",
+        "beets.md",
+        "farming.md",
+        "fishing.md",
+        "rails.md",
+        "ravager.md",
+        "t1.md",
+        "t2.md",
+        "tutorial-info-cache.json",
+        "no_code.md"
+    ],
+    "targetVersions": {
+        "target": "1.6.3",
+        "targetId": "minecraft"
+    },
+    "supportedTargets": [
+        "minecraft"
+    ],
+    "preferredEditor": "tsprj"
+}
