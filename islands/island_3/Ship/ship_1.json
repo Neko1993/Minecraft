@@ -1,0 +1,9 @@
+{
+  "creatorName": "Causeway Digital",
+  "title": "Ship docking",
+  "description": "Build a bridge to get to the islands",
+  "pages": [
+    "ship_1_0",
+    "ship_1_1"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "creatorName": "Causeway Digital",
+  "title": "Translator",
+  "description": "Translate the incoming message",
+  "pages": [
+    "Translator_1",
+    "Translator_2",
+    "Translator_3"
+  ]
+}

@@ -1,0 +1,1 @@
+def build_tower():\n    for height in range(0, 15):\n        agent.move(\"up\")\n        draw_square( )\n        # Complete the line above

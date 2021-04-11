@@ -84,6 +84,10 @@
         "HOC/Two-villages/no_code.md",
         "islands/1/activity1.md",
         "islands/1/activity2.md",
+        "island/island_1/Farm/Farm.json",
+        "island/island_1/Farm/Farm_0.ipynb",
+        "island/island_1/Farm/Farm_1.ipynb",
+        "island/island_1/Farm/farm.jpg",
         "no_coding.md"
     ],
     "targetVersions": {

@@ -1,0 +1,1 @@
+def decode(info):\n    if info == \"a\":\n        return 1\n    elif info == \"b\":\n        return 2\n    \n    \n    \n    \n    # Add your elif and returns for when info is equal to c or d
