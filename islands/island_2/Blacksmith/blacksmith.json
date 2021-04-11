@@ -1,9 +1,0 @@
-{
-  "creatorName": "Causeway Digital",
-  "title": "Blacksmith",
-  "description": "Sort the ores and retrieve the iron",
-  "pages": [
-    "blacksmith_1",
-    "blacksmith_2"
-  ]
-}

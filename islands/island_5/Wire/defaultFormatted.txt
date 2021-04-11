@@ -1,1 +1,0 @@
-def on_player_travelled(location, mode, distance):\n    loc = correct_location(location)\n    agent.teleport(loc)\n    agent.     ( , \"    \")\n    # Finish the line above.
